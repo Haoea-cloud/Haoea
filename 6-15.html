@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .font {
+            width: 200px;
+            height: 200px;
+            background-color: #fcc;
+            color: #FFF;
+            font-weight: 700;
+
+            /* 水平居中 */
+            text-align: center;
+
+            /* 垂直  */
+            line-height: 200px;
+
+            /* 一个值  四个边都是10px*/
+            /* padding: 10px;  */
+
+            /* 两个值  第一个上下  第二个是左右*/
+            /* padding: 10px 20px;  */
+
+            /* 三个值 第一个 上  第二个左右 第三个下  */
+            /* padding: 10px 20px 30px; */
+
+            /* 上右下左 */
+            /* padding: 10px 20px 30px 40px; */
+
+
+
+            padding: 10px 20px 30px ;
+            border: 10px  solid #ffc;
+            /* border-width border-style  border-color */
+            /* border-style: dotted ; */
+            border-width: 10px 20px;
+            margin: 10px;
+
+            /* 标准盒模型中  width: content + 左右padding + 左右的boder */
+            /* width:  200 + 20 + 20 + 10 + 20 = 270*/
+            /* height:  */
+        }
+        
+        body {
+            margin: 0;
+        }
+
+
+        /* absolute 绝对定位   脱离原来位置  相对于最近的有定位的父级 */
+        /* relative  */
+
+        .grandf{
+            width: 300px;
+            height: 300px;
+            background-color: #fcc;
+
+            position: relative;
+            left: 100px;
+            top:100px;
+        }
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: #ffc;
+
+           
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: #aaa;
+
+            position: relative;
+            left: 50px;
+            top: 0;
+        }
+
+
+        .borther {
+            width: 100px;
+            height: 100px;
+            background-color: #aaa;
+
+            position: absolute;
+            left: 0px;
+            top: 0;
+        }
+        .little-border {
+            width: 120px;
+            height: 100px;
+            background-color: #aaa;
+            border:1px solid #fff;
+
+            /* position: absolute;
+            left: 0px;
+            top: 0; */
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            border: 10px solid yellow;
+            border-radius: 50%;
+        }
+
+        .box1 {
+            width: 300px;
+            height: 300px;
+            border: 20px solid gold;
+        }
+
+        .box2 {
+            width: 260px;
+            height: 260px;
+            border: 20px solid #fff;
+        }
+
+        .box3 {
+            width: 220px;
+            height: 220px;
+            border: 20px solid gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- 你在这里练习  我在网上就能看到了 -->
+
+    <!-- 上传需要三步 -->
+
+    <!-- 1.  git add -A  （按上 就能看到历史输入）-->
+    <!-- 2.  git commit -a -m "second commit 3"  （引号里面的是这次是传的注释 每次输入不一样的 可以乱写 不一样就行） -->
+    <!-- 3.  git push -u origin master  -->
+
+    <!-- 文字垂直居中 -->
+    <!-- <div class="font">我是一个大帅哥</div> -->
+
+
+    <!-- css2.0 -->
+
+    <!-- 盒子模型 -->
+
+    <!-- 层模型 -->
+
+    <!-- <div class="grandf">
+        <div class="father">
+            <div class="son"></div>
+        </div>
+    </div> -->
+
+    <!-- <div class="borther"></div>
+    <div class="little-border"></div>
+
+
+    <div class="circle"></div> -->
+
+
+
+    <!-- 远视图 -->
+    <div class="box1">
+        <div class="box2">
+            <div class="box3"></div>
+        </div>
+    </div>
+    <!-- 浮动模型 -->
+
+
+
+</body>
+</html>
