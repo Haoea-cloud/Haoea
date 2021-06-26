@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .waiceng{
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+            /* 溢出的部分隐藏 */
+        }
+        .neiceng{
+            top: 0px;
+            width: 2666px;
+            height: 500px;
+            position: relative;
+            animation: lunbo 6s infinite 8s running;
+
+            
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            float: left;
+        }
+        .box1{
+            background-color: blueviolet;
+        }
+        .box2{
+            background-color:brown;
+        }
+        .box3{
+            background-color:burlywood;
+        }
+        .box4{
+            background-color:cadetblue;
+        }
+        .box5{
+            background-color:chartreuse;
+        }
+        @keyframes lunbo{
+            0%{
+                left:0px;
+            }
+            20%{
+                left: -500px;
+            }
+            25%{
+                left: -500px;
+            }
+            45%{
+                left: -1000px;
+            }
+            50%{
+                left: -1000px;
+            }
+            70%{
+                left: -1500px;
+            }
+            75%{
+                left: -1500px;
+            }
+            95%{
+                left: -2000px;
+            }    
+            100%{
+                left: -2000px;
+            }
+                }
+            .neiceng:hover{
+                animation-play-state: paused;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <div class="waiceng">
+        <div class="neiceng">
+            <div class="box1 box"></div>
+            <div class="box2 box"></div>
+            <div class="box3 box"></div>
+            <div class="box4 box"></div>
+            <div class="box5 box"></div>
+        </div>
+    </div>
+</body>
+</html>

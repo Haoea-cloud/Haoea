@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .waiceng{
+            width: 200px;
+            height: 200px;
+            margin: 0px auto;
+            overflow: hidden;
+            /* 溢出部分隐藏 */
+        }
+        .liceng{
+            width: 1200px;
+            height: 200px;
+            position: relative;
+            animation: b 3s infinite 5s running;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            float: left;
+            /* 横向排齐 */
+        }
+        .box1{
+            background-color: pink;
+        }
+        .box2{
+            background-color:plum;
+        }
+        .box3{
+            background-color:salmon;
+        }
+        .box4{
+            background-color:violet;
+        }
+        .box5{
+            background-color:tomato;
+        }
+        @keyframes b{
+            0%{
+                left: -0px;
+            }
+            20%{
+                left: -200px;
+            }
+            25%{
+                left: -200px;
+            }
+            45%{
+                left: -400px;
+            }
+            50%{
+                left: -400px;
+            }
+            70%{
+                left: -600px;
+            }
+            75%{
+                left: -600px;
+            }
+            95%{
+                left: -800px;
+            }
+            100%{
+                left: -800px;
+            }
+        }
+        .liceng:hover{
+            animation-play-state: paused;
+            /* 鼠标经停*/
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="waiceng">
+        <div class="liceng">
+            <div class="box1 box"></div>
+            <div class="box2 box"></div>
+            <div class="box3 box"></div>
+            <div class="box4 box"></div>
+            <div class="box5 box"></div>
+        </div>
+    </div>
+</body>
+</html>
